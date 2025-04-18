@@ -1,5 +1,10 @@
 function stringChop(str, size) {
   // your code here
+	if(str.length==0){
+		return [];
+		
+	}
+	
 	let ans=[];
 	for(let i=0;i<str.length;i=i+size){
 		let subs= str.slice(i,i+size);
